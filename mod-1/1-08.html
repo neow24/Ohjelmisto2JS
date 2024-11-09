@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"></head>
+<body><ul id="target"></ul><script>'use strict';
+const v0=+prompt("v0:");const vf=+prompt('vf:');const listContainer=document.querySelector('#target');
+for(let i=v0;i<=vf;i++){if((i%4===0&&i%100!=0)||(i%100===0&&i%400===0)){
+const listItem=document.createElement('li');listItem.textContent=i;listContainer.appendChild(listItem);}}
+</script></body></html>
