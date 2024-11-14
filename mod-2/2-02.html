@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"></head>
+<body><ol id="target"></ol><script>'use strict';
+let o=+prompt('Ossallistujien määrä:');const osallistujat=[];
+const listContainer=document.querySelector('#target');
+for(let i=0;i<o;i++){osallistujat[i]=prompt('Nimi:');}osallistujat.sort();
+for(let i=0;i<o;i++){const listItem=document.createElement('li');
+listItem.textContent=osallistujat[i];listContainer.appendChild(listItem);}
+</script></body></html>
